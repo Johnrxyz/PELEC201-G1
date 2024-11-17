@@ -64,11 +64,9 @@ nav a:hover{
 
 nav li:first-child{
     margin-right: auto;
+    padding-left: 2%;
   }
 
-.topnav {
-  padding-left: 2%;
-}
 .sidebar{
     position: fixed;
     top: 0; 

@@ -28,7 +28,7 @@ body{
 }
 
 nav{
-    background-color: #fddde6;
+    background :linear-gradient(to left, #fddde6, #ffd2d2);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     height: 100px;
   }
@@ -54,6 +54,7 @@ nav a{
     display: flex;
     align-items: center;
     color: #2D3651;
+    font-size: 110%;
   }
 
 nav a:hover{
@@ -65,6 +66,9 @@ nav li:first-child{
     margin-right: auto;
   }
 
+.topnav {
+  padding-left: 2%;
+}
 .sidebar{
     position: fixed;
     top: 0; 

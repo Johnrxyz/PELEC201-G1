@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     }
 
   /* DECLARING THE FONTS */
@@ -15,6 +16,14 @@
     font-weight: 200;
     font-style: normal;
 }
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 900px;
+  font-style: normal;
+}
+
 /* FONTS */
 
 body{
@@ -32,6 +41,11 @@ nav{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     height: 100px;
   }
+
+/* #navbar{ try ifix nav bar sa taas
+  position: sticky;
+  top: 0px;
+} */
 
 nav ul{
     width: 100%;
@@ -61,6 +75,10 @@ nav a:hover{
     font-weight: 600;
     text-shadow: 1px 1px 2px #2D3651; 
   }
+
+.topnav a:active{
+  color: white;
+}
 
 nav li:first-child{
     margin-right: auto;
@@ -96,12 +114,112 @@ nav li:first-child{
     display: none;
   }
 
-@media(max-width: 800px){
+.hero {
+  border: 0px solid black;
+}
+
+.heroTitle {
+  /* border: 2px solid black;  */
+  width: 50%; 
+  height: auto; 
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  font-size: 150%;
+  color: #2D3651;
+  width: 100%;
+  height: auto;
+
+}
+
+#heroReadmore {
+    border: 1px solid;
+    border-radius: 30px;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 550;
+    align-items: center;
+    color: #2D3651;
+    background-color: transparent;
+    font-size: 110%;
+}
+
+#heroReadmore:hover{
+  background-color: black;
+  color: white;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #2D3651;
+  width: 50%;
+  margin: 20px auto; 
+  display: none;
+}
+
+.ip16abt {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  width: 50%;
+  /* height: auto; */
+  padding: 10px;
+  float: left;
+  text-align: center;
+}
+
+#promax {
+  font-size: 400%;
+}
+
+.vertiLine {
+  height: 2px;
+  width: 50px;
+  transform: rotate(-90deg);
+}
+
+#proDes {
+  width: 100%; 
+  text-align: left; 
+  padding-top: 5%; 
+  color: #2D3651;
+}
+
+
+@media(max-width: 1024px){
     .hideOnMobile{
       display: none;
     }
     .menu-button{
       display: block;
+    }
+    .heroTitle{
+      float: none;
+      width: 100%;
+    }
+    .ip16abt{
+      float: none;
+      width: 100%;
+    }
+
+    #description {
+      font-size: 100%;
+    }
+    hr {
+      display:block;
+    }
+    #promax {
+      font-size: 250%;
+    }
+    #proDes {
+      padding-left: 5%;
     }
   }
 

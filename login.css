@@ -1,0 +1,66 @@
+.container{
+    background-color: #FCCCCD;
+    background: linear-gradient(to left, #ff90b7, #ffd2d2);
+    margin: 80px;
+    height: 540px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px black;
+    box-shadow: 0 2px 5px;
+}
+input[type="email"],
+input[type="password"]{
+    width: 330px;
+    height: 60px;
+    margin: 5px;
+    margin-left: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+label{
+    color: black;
+    margin-right: 20px;
+    font-size: small;
+}
+input[type="checkbox"]{
+    margin-left: 10px;
+    border-radius: 50px;
+    margin-left: 32px;
+    border: 2px;
+    cursor: pointer;
+    position: relative; 
+}
+input[type="checkbox"]:checked::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    align-content: center;
+}
+a{
+    color: black;
+    margin-left: 65px;
+    font-size: small;
+}
+button{
+    background-color: rgb(198, 155, 255);
+    height: 60px;
+    width: 330px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+a{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+h2{
+    color: gray;
+    margin-left: 30px;
+    margin-top: 0px;
+
+}

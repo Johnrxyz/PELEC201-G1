@@ -4,35 +4,13 @@
     box-sizing: border-box;
     }
 
-  /* DECLARING THE FONTS */
-.titillium-web-black {
-    font-family: "Titillium Web", serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.titillium-web-extralight {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.montserrat {
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: 900px;
-  font-style: normal;
-}
-
-/* FONTS */
-
 body{
     min-height: 100vh;
     background: linear-gradient(to left, #fddde6, #ffd2d2);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", serif;
 
 }
 
@@ -68,7 +46,7 @@ nav a{
     display: flex;
     align-items: center;
     color: #2D3651;
-    font-size: 110%;
+    font-size: 150%;
   }
 
 nav a:hover{
@@ -89,7 +67,7 @@ nav li:first-child{
     position: fixed;
     top: 0; 
     right: 0;
-    height: 40vh;
+    height: 50vh;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(12px);
@@ -149,7 +127,6 @@ p {
   color: #2D3651;
   width: 100%;
   height: auto;
-
 }
 
 #heroReadmore {
@@ -212,6 +189,7 @@ hr {
   text-align: center; 
   width: 60%;
 }
+
 #promax {
   font-size: 400%;
 }
@@ -241,6 +219,7 @@ hr {
 #glow {
   font-weight: 600; 
   text-align: left;
+  margin-top: -5%;
 
 }
 /* SECTION 2 */
@@ -261,7 +240,7 @@ hr {
 
 .eachSeries {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -273,7 +252,7 @@ hr {
 .seriesImage {
   width: 100%;
   height: auto; 
-  border-radius: 20px;
+  border-radius: 0px;
   transition: opacity 0.3s ease;
 }
 
@@ -333,22 +312,26 @@ footer {
       padding: 0% 5%;
     }
     .desP {
-      padding: 12%;
-      font-size: 100%;
+      padding:5%;
+      font-size: 150%;
     }
+
     #proDes{
-      padding: 12%;
-      font-size: 100%;
+      padding: 6%;
+      font-size: 150%;
     }
+
     #glow {
       font-size: 140%;
       padding: 0% 5%;
+      margin-top: -2%;
     }
     .photoGrid {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     }
-    .footer {
-      font-size: 30%;
+
+    footer {
+      font-size: 50%;
     }
   }
 
@@ -356,6 +339,16 @@ footer {
     .sidebar{
       width: 50%;
     }
+
+    #proDes{
+      padding: 6%;
+      font-size: 100%;
+    }
+    .desP {
+      padding:5%;
+      font-size: 100%;
+    }
+
   }
 
 h1{

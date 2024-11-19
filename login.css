@@ -41,10 +41,11 @@ input[type="checkbox"]:checked::before{
     border-radius: 50px;
     align-content: center;
 }
-a{
+#signupBtn{
     color: black;
     margin-left: 65px;
     font-size: small;
+
 }
 button{
     background-color: rgb(198, 155, 255);

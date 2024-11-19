@@ -1,0 +1,22 @@
+p {text-align: center;
+  font-size: 10px;}
+
+h2 {
+    padding-left: 20%;
+    color: #2D3651
+    
+}
+#num1 {
+    padding-left: 30%;
+    color: #2D3651
+    
+}
+#mes {font-size: 20px;
+        text-align: center;
+        color: #2D3651
+}
+
+#info {font-size: 15px;
+    text-align: center;
+    color: #2D3651 
+}

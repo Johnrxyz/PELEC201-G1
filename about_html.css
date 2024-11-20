@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: "Montserrat", serif;
 }
-  
+
+main {
+  margin-top: 6%;
+}
+
 .about-header {
     padding-top: 2%;
     text-align: center;
@@ -94,6 +98,8 @@
 }
 
 @media (max-width: 1024px) {
+
+  
 .features {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -126,13 +132,14 @@
 }
   
 
-@media (max-width: 400px) {
+@media (max-width: 483px) {
+
 .about-us {
       padding: 20px;
     }
   
 .about-header h1 {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   
 .about-header p {

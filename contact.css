@@ -8,6 +8,10 @@
     /* background-color: #ffe5ec; */
 }
 
+main {
+    margin-top: 13vh;
+}
+
 .contact-content {
     /* border: 1px solid black; */
     flex: 1;

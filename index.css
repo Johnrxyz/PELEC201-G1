@@ -14,7 +14,16 @@ body{
 
 }
 
+main {
+  margin-top: 10vh;
+}
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(50px);  
     background :linear-gradient(to left, #fddde6, #ffd2d2);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     height: 100px;
@@ -49,14 +58,24 @@ nav a{
     font-size: 150%;
   }
 
+
 nav a:hover{
     font-weight: 600;
     text-shadow: 1px 1px 2px #2D3651; 
   }
 
-.topnav a:active{
-  color: white;
+nav a.active {
+  box-sizing: border-box;
+    height: 100%;
+    padding: 0 30px;
+    margin-top: 25px;
+    font-weight: 600;
+    border: 2px solid #2D3651;
+    border-radius: 50px;
+    text-shadow: 1px 1px 2px #2D3651; 
+    transition: background-color 0.3s, color 0.3s ease;
 }
+
 
 nav li:first-child{
     margin-right: auto;
@@ -172,7 +191,7 @@ hr {
    /* border: 1px solid black; */
    box-sizing: border-box;
    width: 50%;
-   /* height: auto; */
+   height: auto;
    padding: 10px;
    float: left;
    text-align: center;
@@ -273,83 +292,86 @@ footer {
 }
 
 @media(max-width: 1024px){
-    .hideOnMobile{
-      display: none;
-    }
-    .menu-button{
-      display: block;
-    }
+main{
+  margin-top: 10vh;
+}
+.hideOnMobile{
+  display: none;
+}
+.menu-button{
+  display: block;
+}
 
-    .hero {
-      display: block;
-    }
+.hero {
+  display: block;
+}
 
-    .heroTitle{
-      float: none;
-      width: 100%;
-    }
-    .heroTitleDes{
-      width: 100%;
-    }
+.heroTitle{
+  float: none;
+  width: 100%;
+}
+.heroTitleDes{
+  width: 100%;
+}
 
-    .ip16abtPhoto{
-      float: none;
-      width: 100%;
-    }
+.ip16abtPhoto{
+  float: none;
+  width: 100%;
+}
 
-    .ip16abtDes {
-      float: none;
-      width: 100%;
-    }
-    #description {
-      font-size: 60%;
-    }
-    hr {
-      display:block;
-    }
-    #promax {
-      font-size: 240%;
-      padding: 0% 5%;
-    }
-    .desP {
-      padding:5%;
-      font-size: 150%;
-    }
+.ip16abtDes {
+  float: none;
+  width: 100%;
+}
+#description {
+  font-size: 60%;
+}
+hr {
+  display:block;
+}
+#promax {
+  font-size: 240%;
+  padding: 0% 5%;
+}
+.desP {
+  padding:5%;
+  font-size: 150%;
+}
 
-    #proDes{
-      padding: 6%;
-      font-size: 150%;
-    }
+#proDes{
+  padding: 6%;
+  font-size: 150%;
+}
 
-    #glow {
-      font-size: 140%;
-      padding: 0% 5%;
-      margin-top: -2%;
-    }
-    .photoGrid {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    }
+#glow {
+  font-size: 140%;
+  padding: 0% 5%;
+  margin-top: -2%;
+}
+.photoGrid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+}
 
-    footer {
-      font-size: 50%;
-    }
-  }
+footer {
+  font-size: 50%;
+}
+}
 
-  @media(max-width: 483px){
-    .sidebar{
-      width: 50%;
-    }
+@media(max-width: 483px){
+.sidebar{
+  width: 50%;
+}
 
-    #proDes{
-      padding: 6%;
-      font-size: 100%;
-    }
-    .desP {
-      padding:5%;
-      font-size: 100%;
-    }
+#proDes{
+  padding: 6%;
+  font-size: 100%;
+}
+.desP {
+  padding:5%;
+  font-size: 100%;
+}
 
-  }
+}
 
 h1{
     color: #2D3651;

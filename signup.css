@@ -91,11 +91,6 @@ nav li:first-child{
 .menu-button{
     display: none;
 }
-
-  body {
-    background: #fdddf0;
-    color: #333;
-  }
   
   .header {
     display: flex;
@@ -159,46 +154,97 @@ nav li:first-child{
     margin-top: 20px;
     width: 500px;
   }
-  
-  .register {
-    background: #f1cfe7;
+
+.register {
+    background: #eed4e3;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .register h2 {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.register h2 {
     margin-bottom: 20px;
     font-size: 24px;
     color: #222;
-  }
-  
-  .register form input {
-    display: block;
+}
+
+.register form input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .register form button {
+    font-size: 14px;
+}
+
+.register form button {
     width: 100%;
     padding: 10px;
     background: #b584d4;
     border: none;
     color: #fff;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-  }
-  
-  .register form p {
+    transition: background 0.3s ease;
+}
+
+.register form button:hover {
+    background: #9d6dc0;
+}
+
+.register form p {
     margin-top: 10px;
-    text-align: center;
     font-size: 14px;
-  }
-  
-  .register form a {
+}
+
+.register form a {
     color: #b584d4;
     text-decoration: none;
-  }
+}
+
+.register form a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768%) {
+    .register {
+        width: 80%;
+        padding: 20%;
+    }
+    
+    .register h2 {
+        font-size: 20%;
+    }
+    
+    .register form input {
+        font-size: 13%;
+    }
+    
+    .register form button {
+        font-size: 14%;
+    }
+}
+
+@media (max-width: 480%) {
+    .register {
+        width: 90%;
+    }
+    
+    .register h2 {
+        font-size: 18%;
+    }
+    
+    .register form input {
+        font-size: 12%;
+        padding: 8%;
+    }
+    
+    .register form button {
+        font-size: 13%;
+        padding: 8%;
+    }
+}

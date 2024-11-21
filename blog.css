@@ -169,7 +169,7 @@ main {
 /* Responsive Design */
 
 /* Tablets */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .mainBlog {
         width: 100%;
     }
@@ -211,7 +211,7 @@ main {
   }
   
   /* Mobile Phones */
-  @media (max-width: 483px) {    
+  @media (max-width: 425px) {    
     .links a{
         margin-left: 0%;
         font-size: 100%;

@@ -220,7 +220,7 @@ nav li:first-child{
 }
 
 /* Responsive Design */
-@media (max-width: 768%) {
+@media (max-width: 768px) {
     .register {
         width: 80%;
         padding: 20%;
@@ -239,7 +239,7 @@ nav li:first-child{
     }
 }
 
-@media (max-width: 480%) {
+@media (max-width: 425px) {
     .register {
         width: 90%;
     }

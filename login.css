@@ -112,3 +112,11 @@ button{
     width: 50px;
     position: static;
 }
+
+@media (max-width: 768px){
+    /* PANG RESPONSIVE ITO MORA (TABLET) */
+}
+
+@media (max-width: 425px){
+    /* mobile */
+}

@@ -91,15 +91,7 @@ nav li:first-child{
 .menu-button{
     display: none;
 }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #fff;
-  }
-  
+
   .logo {
     display: flex;
     align-items: center;
@@ -123,49 +115,39 @@ nav li:first-child{
     padding: 5px 15px;
     border-radius: 15px;
   }
-  
-  .main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 20px;
-  }
-  
-  .content {
-    text-align: left;
-  }
-  
-  .content h1 {
-    font-size: 50px;
-    color: #222;
-  }
-  
-  .content h1 small {
-    font-size: 30px;
-    color: #999;
-  }
-  
-  .content p {
-    font-size: 16px;
-    color: #666;
-  }
-  
-  .phones {
-    margin-top: 20px;
-    width: 500px;
-  }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 45px 20%;
+}
+.hero-text {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+}
+
+.title {
+  margin-top: 5px;
+  width: 60%;
+}
+
+.phones {
+  margin-top: 50px;
+  width: 70%;
+  transform: rotate(-10deg);
+}
 
 .register {
-    background: #eed4e3;
-    padding: 2%;
-    border-radius: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 52.778vh;
-    height: 66vh;
-    text-align: center;
-    position: relative;
-    top: 15vh;
-    left: 140vh;
+  background: #ffd6e1;
+  background: linear-gradient(to top, #FFE5EC, #eccdd5);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+  width: 470px;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
 .register h2 {
@@ -173,11 +155,12 @@ nav li:first-child{
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-size: 3.333vh;
+    font-size: 30px;
     color: #222;
 }
 
 .register form input {
+  font-family: "Montserrat", serif;
     width: 40.222vh;
     height: 6.222vh;
     padding: 10px;
@@ -207,7 +190,7 @@ nav li:first-child{
 
 .register form p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 70%;
 }
 
 .register form a {
@@ -257,4 +240,9 @@ nav li:first-child{
         font-size: 13%;
         padding: 8%;
     }
+}
+@media(max-width: 483px){
+  .sidebar{
+    width: 50%;
+  }
 }

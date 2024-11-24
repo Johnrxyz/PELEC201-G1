@@ -1,19 +1,15 @@
 .container[data-type="main"]{
     background-color: #FCCCCD;
-    background: linear-gradient(to left, #f3a7c1fd, #ffd2d2);
-    margin: 80px;
-    margin-left: 150px;
+    background: linear-gradient(to left, #ff90b7, #ffd2d2);
+    margin: 10%px;
+    margin-left: 20%;
     height: 540px;
     width: 400px;
     border-radius: 30px;
     border: 1px black;
     box-shadow: 0 2px 5px;
+    
 }
-
-main {
-    margin-top: 20vh;
-}
-
 input[type="email"],
 input[type="password"]{
     width: 330px;
@@ -47,7 +43,7 @@ input[type="checkbox"]:checked::before{
     border-radius: 50px;
     align-content: center;
 }
-.links {
+a{
     color: black;
     margin-left: 65px;
     font-size: small;
@@ -61,8 +57,7 @@ button{
     margin-left: 30px;
     margin-top: 30px;
 }
-
-.links {
+a{
     margin-bottom: 0px;
     margin-top: 10px;
 }
@@ -112,11 +107,9 @@ button{
     width: 50px;
     position: static;
 }
-
-@media (max-width: 768px){
-    /* PANG RESPONSIVE ITO MORA (TABLET) */
-}
-
-@media (max-width: 425px){
-    /* mobile */
+.title-name{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
 }

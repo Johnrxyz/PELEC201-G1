@@ -13,11 +13,19 @@ body{
     font-family: "Montserrat", serif;
 
 }
+main {
+  margin-top: 10vh;
+}
 
 nav{
-    background :linear-gradient(to left, #fddde6, #ffd2d2);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(5px);  
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  height: 100px;
   }
 
 /* #navbar{ try ifix nav bar sa taas
@@ -55,7 +63,15 @@ nav a:hover{
   }
 
 .topnav a:active{
-  color: white;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 30px;
+  margin-top: 25px;
+  font-weight: 600;
+  border: 2px solid #2D3651;
+  border-radius: 50px;
+  text-shadow: 1px 1px 2px #2D3651; 
+  transition: background-color 0.3s, color 0.3s ease;
 }
 
 nav li:first-child{
@@ -67,7 +83,7 @@ nav li:first-child{
     position: fixed;
     top: 0; 
     right: 0;
-    height: 50vh;
+    height: 27rem;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(12px);
@@ -119,82 +135,85 @@ nav li:first-child{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 45px 20%;
+padding: 10%, 10%;
 }
+
 .hero-text {
   flex-direction: column;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .title {
-  margin-top: 5px;
-  width: 60%;
+  margin-top: 5%;
+  width: 50%;
 }
 
 .phones {
-  margin-top: 50px;
-  width: 70%;
-  transform: rotate(-10deg);
+  margin-top: 2%;
+  width: 50%;
+  transform: rotate(-15deg);
 }
 
 .register {
   background: #ffd6e1;
-  background: linear-gradient(to top, #FFE5EC, #eccdd5);
-  padding: 30px;
-  border-radius: 20px;
+  background: linear-gradient(to top, #FFE1E9, #FFCDD9);
+  padding: 2%;
+  border-radius: 30px;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
-  width: 470px;
+  width: 50%;
+  align-items: center;
   text-align: center;
   margin-top: 5%;
-  margin-left: 5%;
+  margin-right: 8%;
 }
 
 .register h2 {
-    font-family: "Montserrat", serif;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: #222;
+  font-family: "Montserrat", serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 3%;
+  font-size: 180%;
+  color: #222;
 }
 
 .register form input {
   font-family: "Montserrat", serif;
-    width: 40.222vh;
-    height: 6.222vh;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 14px;
-    color: #BDBDBD;
+  width: 95%;
+  height: 100%;
+  padding: 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #BDBDBD;
 }
 
 .register form button {
-    width: 40.222vh;
-    height: 6.222vh;
-    padding: 10px;
+    width: 95%;
+    height: 50%;
+    padding: 15px;
+    margin-top: 3%;
     background: #C2BDFF;
     border: none;
     color: #434343;
     border-radius: 10px;
-    font-size: 1.667vh;
+    font-size: 90%;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 .register form button:hover {
-    background: #9d6dc0;
+    background: #8e48c0;
 }
 
 .register form p {
-    margin-top: 10px;
-    font-size: 70%;
+    margin-top: 2%;
+    font-size: 80%;
 }
 
 .register form a {
-    color: #b584d4;
+    color: #744c8d;
     text-decoration: none;
 }
 
@@ -203,46 +222,108 @@ nav li:first-child{
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .register {
-        width: 80%;
-        padding: 20%;
-    }
-    
-    .register h2 {
-        font-size: 20%;
-    }
-    
-    .register form input {
-        font-size: 13%;
-    }
-    
-    .register form button {
-        font-size: 14%;
-    }
+@media(max-width: 1024px){
+nav a {
+  font-size: 135%;
+  padding: 0px 15px 0px 15px;
 }
 
-@media (max-width: 425px) {
-    .register {
-        width: 90%;
-    }
-    
-    .register h2 {
-        font-size: 18%;
-    }
-    
-    .register form input {
-        font-size: 12%;
-        padding: 8%;
-    }
-    
-    .register form button {
-        font-size: 13%;
-        padding: 8%;
-    }
+nav a.active {
+  padding: 0 15px;
+  margin-top: 20px;
 }
-@media(max-width: 483px){
-  .sidebar{
-    width: 50%;
-  }
+
+.register {
+  float: none;
+  width: 70%;
+  margin-bottom: 10%;
+}
+
+.register h2 {
+  font-size: 140%;
+}
+
+}
+
+@media(max-width: 768px){
+main{
+  margin-top: 10vh;
+}
+.hideOnMobile{
+  display: none;
+}
+
+.menu-button{
+  display: block;
+}
+  
+.hero {
+  display: block;
+}
+
+.title {
+  margin-top: 15%;
+}
+
+.phones {
+  display: none;
+}
+
+.register {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.register h2 {
+  text-align: center;
+  font-size: 150%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.register form p {
+  text-align: center;
+  font-size: 80%;
+}
+}  
+@media(max-width: 425px){
+
+.sidebar{
+  width: 50%;
+}
+
+.title {
+  width: 70%;
+  margin-top: 30%;
+  margin-bottom: 5%;
+}
+
+.register {
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+}
+
+.register h2 {
+  font-size: 125%;
+}
+
+.register form input {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.register form button {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.register form p {
+  font-size: 70%;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
 }

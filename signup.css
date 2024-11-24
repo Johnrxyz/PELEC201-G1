@@ -135,8 +135,9 @@ nav li:first-child{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10%, 10%;
+padding: 10%, 10%;
 }
+
 .hero-text {
   flex-direction: column;
   display: flex;

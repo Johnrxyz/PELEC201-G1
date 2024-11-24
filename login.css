@@ -43,12 +43,14 @@ input[type="checkbox"]:checked::before{
     border-radius: 50px;
     align-content: center;
 }
-a{
+
+.recovery{
     color: black;
     margin-left: 65px;
     font-size: small;
     text-decoration: none;
 }
+
 button{
     background-color: rgb(198, 155, 255);
     height: 60px;

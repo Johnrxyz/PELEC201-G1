@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #fddde6, #ffd2d2);
+    color: #333;
+  }
+
+.product-page {
+    padding: 0px;
+    max-width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+  
+.back-button {
+    margin: 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+.prodDescription {
+    justify-content: space-between;
+    display: flex;
+    /* border: 1px solid black; */
+  }
+  
+.ip16abtPhoto {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    width: 40%;
+    margin-top: 5%;
+}
+.ip16abtPhoto img{
+    width: 120%;
+}
+
+.price {
+    font-size: 2.5em;
+    color: #2D3651;
+}
+  
+.ip16abtDes {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    float: left;
+    text-align: center; 
+    width: 60%;
+}
+  
+  
+.ip16name{
+    display: none;
+  }
+  
+#proDes {
+    width: 80%; 
+    text-align: left; 
+    padding-top: 1%; 
+    color: #2D3651;
+    line-height: 180%;
+    letter-spacing: 200%;
+    font-size: 1.2rem;
+  }
+  
+  
+#promax {
+    color: #2D3651;
+    font-weight: 400; 
+    text-align: left;
+    font-size: 400%;
+  }
+  
+#glow {
+    color: #2D3651;
+    font-weight: 600; 
+    text-align: left;
+    margin-top: -6%;
+    font-size: 150%;
+   
+  }
+
+
+.spec-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+.spec-title::after {
+    content: "";
+    flex: 1; 
+    height: 1px;
+    background-color: #2D3651;
+    margin: 0 20px; /* Space between the line and the text */
+  }
+  
+.spec-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #2D3651;
+    margin-bottom: 5px;
+  }
+  
+hr {
+    border: none;
+    border-top: 1px solid #2D3651;
+    margin: 10px 0;
+  }
+  
+.spec-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  
+.spec-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #2d36512a;
+  }
+  
+  
+.spec-key {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2D3651;
+    flex: 1;
+  }
+  
+.spec-value {
+    font-size: 1.2rem;
+    text-align: left;
+    flex: 2;
+    color: #2D3651;
+  }
+  
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    /* background-color: #b12a60; */
+    font-size: 120%;
+    color: #2D3651;
+    margin: 0px;
+  }
+
+/* RESPONSIVENESS */
+
+@media(max-width: 1024px){
+    .ip16abtPhoto{
+        margin-top: 20%;
+    }
+    .price {
+        font-size: 2.2rem;
+    }
+
+    .spec-key {
+      font-size: 1rem;
+    }
+
+    .spec-title {
+      font-size: 2.0rem;
+    }
+    .spec-value {
+      font-size: 1rem;
+    }
+
+    footer {
+      font-size: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .ip16abtPhoto{
+        width: 100%;
+        margin-top: 0%;
+      }
+      
+    .ip16abtDes {
+        width: 100%;
+      }
+    .ip16abtPhoto img{
+        width: 100%;
+    }
+    .price {
+      margin-bottom: 10%;
+    }
+
+    #promax {
+        text-align: left;
+        font-size: 300%;
+    }
+    
+    #glow {
+        text-align: left;
+        margin-top: -8%;
+        font-size: 120%;
+      }
+    #proDes {
+        width: 100%;
+    }
+    
+    .spec-key {
+        font-size: .8rem;
+    }
+
+    .spec-title {
+        font-size: 1.8rem;
+    }
+    .spec-value {
+        font-size: .8rem;
+    }
+
+
+    footer {
+        font-size: 90%;
+    }
+
+}
+
+@media (max-width: 425px){
+    .product-page{
+      margin-left: 8%;
+    }
+    .ip16name {
+      display: flex;
+      width: 110%;
+      height: auto;
+      padding-left:auto;
+    }
+    
+    #promax {
+      display: none;
+    }
+    
+    #glow{
+      display: none;
+    }
+
+    #proDes {
+      width: 110%;
+      font-size: 110%;
+    }
+    .price{
+      font-size: 1.5rem;
+    }
+
+    .spec-title {
+      font-size: 1.4rem;
+  }
+
+  .spec-value {
+    font-size: .8rem;
+}
+    footer {
+      font-size: 70%;
+    }
+
+}
+
+@media (max-width: 320px){
+    .ip16name {
+      display: flex;
+      width: 130%;
+      height: auto;
+      padding-left:auto;
+    }
+
+    #proDes {
+      width: 130%;
+      font-size: 100%;
+    }
+    
+    .ip16abtPhoto{
+      width: 120%;
+      margin-top: 0%;
+    }
+}

@@ -36,7 +36,7 @@
             <li class="hideOnMobile"><a href="blog.html">BLOG</a></li>
             <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
             <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
-            <li class="hideOnMobile"><a href="login.html">LOGIN</a></li>
+            <li class="hideOnMobile"><a href="login.html" class="active">LOGIN</a></li>
             <li class="hideOnMobile"><a href="signup.html">SIGNUP</a></li>
     
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
@@ -57,30 +57,24 @@
       </script>
 
     <main>
-        <div><img src="assets/titleName.png" alt="" class="title-name"></div>
-        <div class="container" data-type="main">
-            <h1>LOGIN</h1>
-            <input type="email" placeholder=" Enter your email address">
-            <input type="password" placeholder=" Password ">
-            <div class="checkbox">
-              <input type="checkbox" id="Keep me login">
-              <label for="Keep me login">Keep me login</label> <a class="recovery" href="#">Recovery password</a>
-            </div>
-            <button>Sign in</button>
-            <a href="@">Didn't have an account? Sign up here</a>
-            <div class="container">
-              <h2 class="title">Or</h2>
-            </div>
-            <div class="social-button">
-              <button><a href="https://www.facebook.com/login/" class="facebook-link">
-                <img src="assets/fb.png" alt="" class="fb-logo"> Connect to Facebook
-              </a></button>
-              <button><a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fwww.google.com%2F&service=accountpicker&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="google-link">
-                <img src="assets/gmail.png" alt="" class="google-logo">Connect to Google
-              </a></button>
-            </div>
+      <section class="hero">
+        <div class="hero-image">
+          <img src="assets/titleName.png" alt="titleName" class="title">
+          <img src="assets/iPhones.png" alt="iPhones" class="phones">
         </div>
-
+        <div class="login">
+            <h2>Login</h2>
+            <form class="mainform">
+                <input type="text" placeholder="Enter your email address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="checkbox" id="keep_me_login" name="keep_me_login" value="always log in">
+                <label for="keep_me_login">Keep me login</label>
+                <a href="#">Recovery password</a>
+                <button type="submit">Sign In</button>
+                <p>Didn't have an account? <a href="signup.html">Sign Up here</a></p>
+                <h3>or</h3>
+            </form>
+        </div>
     </main>     
     
 </body>

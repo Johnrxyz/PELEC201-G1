@@ -135,7 +135,7 @@ nav li:first-child{
   display: flex;
   align-items: center;
   justify-content: space-around;
-padding: 10%, 10%;
+  padding: 10%, 10%;
 }
 
 .hero-text {
@@ -145,7 +145,7 @@ padding: 10%, 10%;
 }
 
 .title {
-  margin-top: 5%;
+  margin-top: 15%;
   width: 50%;
 }
 
@@ -164,7 +164,7 @@ padding: 10%, 10%;
   width: 50%;
   align-items: center;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-right: 8%;
 }
 

@@ -15,7 +15,7 @@ body{
 }
 
 main {
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 nav{
@@ -136,6 +136,10 @@ nav li:first-child{
   text-align: center;
 }
 
+.title {
+  padding-left: 4%;
+}
+
 .heroTitleDes {
   /* border: 0px solid black;  */
   width: 50%; 
@@ -195,7 +199,7 @@ hr {
 .ip16abtPhoto {
    /* border: 1px solid black; */
    box-sizing: border-box;
-   width: 50%;
+   width: 30%;
    height: auto;
    padding: 10px;
    float: left;
@@ -203,10 +207,14 @@ hr {
    width: 40%;
 }
 
+.ip16abtPhoto >  img{
+  padding-left:  0%;
+}
+
 .ip16abtDes {
   /* border: 1px solid black; */
   box-sizing: border-box;
-  width: 50%;
+  width: 70%;
   /* height: auto; */
   padding: 10px;
   float: left;
@@ -223,9 +231,9 @@ hr {
 }
 
 #proDes {
-  width: 100%; 
+  width: 90%; 
   text-align: left; 
-  padding-top: 5%; 
+  padding-top: 2%; 
   color: #2D3651;
 }
 
@@ -259,6 +267,8 @@ hr {
 .series {
   padding: 20px;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .prodGrid {
@@ -329,6 +339,9 @@ footer {
   color: #fff;
 }
 
+footer > p {
+  color: white;
+}
 @media(max-width: 1024px){
   nav a {
     font-size: 135%;
@@ -342,9 +355,16 @@ footer {
 }
 
 @media(max-width: 768px){
+
+
 main{
   margin-top: 10vh;
 }
+
+.title {
+  padding-left: 0%;
+}
+
 
 nav{
   position: auto;
@@ -451,6 +471,7 @@ main {
 
 #heroReadmore {
   font-size: 100%;
+  margin-top: -20%;
 }
 .series {
   padding: 0;

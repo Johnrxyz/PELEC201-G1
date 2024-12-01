@@ -4,8 +4,9 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to left, #fddde6, #ffd2d2);
+    background: linear-gradient(to bottom, #fddde6, #ffd2d2);
     color: #333;
+      
   }
 
 .product-page {
@@ -18,8 +19,11 @@ body {
 .back-button {
     margin: 2%;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    z-index: 1000;
+    cursor: pointer;
 }
   
 .prodDescription {
@@ -195,6 +199,10 @@ footer {
         width: 100%;
         margin-top: 0%;
       }
+    
+    body {
+      padding-top: 6vh;
+    }
       
     .ip16abtDes {
         width: 100%;

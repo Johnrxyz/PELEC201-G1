@@ -179,7 +179,7 @@ h1 {
 }
 
 /* PHONE VIEW */
-@media (max-width: 425px) {
+@media (max-width: 440px) {
 .contact {
     padding: 10px;
 }

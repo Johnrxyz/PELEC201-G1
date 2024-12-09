@@ -211,7 +211,7 @@ main {
   }
   
   /* Mobile Phones */
-  @media (max-width: 425px) {    
+  @media (max-width: 440px) {    
     .links a{
         margin-left: 0%;
         font-size: 100%;

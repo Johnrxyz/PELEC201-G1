@@ -200,7 +200,7 @@ nav li:first-child{
     height: 50%;
     padding: 15px;
     margin-top: 3%;
-    background: #C2BDFF;
+    background: #b7b1fe;
     border: none;
     color: #434343;
     border-radius: 10px;
@@ -210,7 +210,7 @@ nav li:first-child{
 }
 
 .login form button:hover {
-    background: #8e48c0;
+    background: #dbc7e9;
 }
 
 .login form p {
@@ -256,7 +256,39 @@ nav li:first-child{
   width: 100%;
   margin-right: 0;
 }
+.checkbox{
+  font-size: small;
+  margin-left: -60px ;
+}
 
+/* Social Buttons */
+.social-button {
+    margin: 20px 0;
+}
+
+.social-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.social-button img {
+    width: 30px;
+    margin-right: 10px;
+}
+.facebook-link{
+  text-decoration: none;
+}
+.google-link{
+  text-decoration: none;
+}
 /* Responsive Design */
 @media(max-width: 1024px){
 nav a {

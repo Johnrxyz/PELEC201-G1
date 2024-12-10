@@ -58,14 +58,14 @@ body {
 .card p {
   font-size: 1.5vw;
   color: #2D3651;
-  margin-top: -5%;
+  margin-top: -10%;
 }
 
 .card .price {
-  font-size: 3vw;
+  font-size: 3.5vw;
   color: #2D3651;
   margin-top: 30px;
-  font-weight: 300;
+  font-weight: 500;
   border-bottom: 1px solid #2D3651;
   display: inline;
 }
@@ -126,8 +126,6 @@ select:focus {
   height: auto;
 }
 
-/* Responsive Styles */
-/* Tablets */
 @media (max-width: 768px) {
   .card {
     flex-direction: column;
@@ -152,12 +150,12 @@ select:focus {
   }
 
   .card h1 {
-    font-size: 12vw;
+    font-size: 14vw;
   }
 
   .card p {
-    font-size: 4vw;
-    margin-top: -10%;
+    font-size: 5vw;
+    margin-top: -15%;
   }
 
   .card .price {
@@ -174,7 +172,6 @@ select:focus {
   }
 }
 
-/* Mobile Phones */
 @media (max-width: 480px) {
   body {
     padding: 5%;
@@ -186,19 +183,24 @@ select:focus {
   }
 
   .card h1 {
-    font-size: 8vw;
+    font-size: 13vw;
   }
 
+.card .info {
+  border: none;
+  /* border-top: 2px solid #2D3651; */
+  border-radius: 0px;
+}
   .card p {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .card .price {
-    font-size: 5vw;
+    font-size: 10vw;
   }
 
   .card ul li {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .card .info {
@@ -215,7 +217,7 @@ select:focus {
   }
 
   select {
-    font-size: 2vw;
+    font-size: 3.5vw;
     width: 40%;
   }
 }

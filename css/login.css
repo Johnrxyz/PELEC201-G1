@@ -270,7 +270,7 @@ nav li:first-child{
 .social-button button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     background: white;
     color: black;
     border: 1px solid #ddd;
@@ -287,9 +287,11 @@ nav li:first-child{
 }
 .facebook-link{
   text-decoration: none;
+  margin-left: 30%;
 }
 .google-link{
   text-decoration: none;
+  margin-left: 30%;
 }
 /* Responsive Design */
 @media(max-width: 1024px){
@@ -312,7 +314,12 @@ nav a.active {
 .login h2 {
   font-size: 140%;
 }
-
+.facebook-link{
+  margin-left: 10%;
+}
+.google-link{
+  margin-left: 10%;
+}
 }
 
 @media(max-width: 768px){
@@ -402,5 +409,10 @@ main{
   margin-top: 0%;
   margin-bottom: 5%;
 }
-
+.facebook-link{
+  margin-left: 0%;
+}
+.google-link{
+  margin-left: 0%;
+}
 }

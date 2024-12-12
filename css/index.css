@@ -169,6 +169,7 @@ p {
     color: #2D3651;
     background-color: transparent;
     font-size: 110%;
+    margin-top: -50%;
 }
 
 #heroReadmore:hover{
@@ -387,7 +388,9 @@ nav{
 .heroTitleDes{
   width: 100%;
 }
-
+#heroReadmore {
+  margin-top: 20px;
+}
 .ip16abtPhoto{
   float: none;
   width: 100%;
@@ -471,7 +474,7 @@ main {
 
 #heroReadmore {
   font-size: 100%;
-  margin-top: -20%;
+  margin-top: 10px;
 }
 .series {
   padding: 0;

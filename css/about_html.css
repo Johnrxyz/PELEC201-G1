@@ -98,7 +98,9 @@ main {
 }
 
 @media (max-width: 768px) {
-
+main {
+  padding-top: 10px;
+}
   
 .features {
     grid-template-columns: 1fr;
@@ -134,7 +136,9 @@ main {
   
 
 @media (max-width: 440px) {
-
+main {
+    padding-top: 0px;
+  }
 .about-us {
       padding: 20px;
     }

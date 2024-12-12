@@ -13,7 +13,7 @@ const storagePrices = {
     },
     "iphone6sp": {
         "64GB": "₱7,000",
-        "128GB": "₱7,500"
+        "128GB": "₱8,500"
     },
     "iphone8": {
         "64GB": "₱7,000",

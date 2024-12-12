@@ -3,7 +3,7 @@
 }
 
 body {
-  background: linear-gradient(to left, #fddde6, #ffd2d2);
+  background-color: #ffd2d2;
   margin: 0;
   padding: 2%;
   font-family: "Montserrat", serif;
@@ -85,6 +85,10 @@ body {
   width: 60%;
 }
 
+.card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+}
 .iPimage {
   width: 40%;
   padding-top: 2%;
@@ -127,62 +131,62 @@ select:focus {
 }
 
 @media (max-width: 768px) {
-  .card {
+.card {
     flex-direction: column;
     align-items: center;
   }
 
-  .phoneName, 
-  .card .info{
+.phoneName, 
+.card .info{
     width: 90%;
     text-align: left;
     padding: 5%;
     padding-top: 0%;
   }
 
-  .info .specs {
+.info .specs {
     width: 100%;
   }
-  .iPimage {
+.iPimage {
     width: 100%;
     margin: auto;
     padding-right: 10%;
   }
 
-  .card h1 {
+.card h1 {
     font-size: 14vw;
   }
 
-  .card p {
+.card p {
     font-size: 5vw;
     margin-top: -15%;
   }
 
-  .card .price {
+.card .price {
     font-size: 8vw;
   }
 
-  .card ul li {
+.card ul li {
     font-size: 2.5vw;
   }
 
-  select {
+select {
     font-size: 2vw;
     width: 30%;
   }
 }
 
 @media (max-width: 480px) {
-  body {
+body {
     padding: 5%;
     padding-top: 15%;
   }
 
-  .card {
+.card {
     padding: 15px;
   }
 
-  .card h1 {
+.card h1 {
     font-size: 13vw;
   }
 
@@ -191,32 +195,32 @@ select:focus {
   /* border-top: 2px solid #2D3651; */
   border-radius: 0px;
 }
-  .card p {
+.card p {
     font-size: 6vw;
   }
 
-  .card .price {
+.card .price {
     font-size: 10vw;
   }
 
-  .card ul li {
+.card ul li {
     font-size: 4vw;
   }
 
-  .card .info {
+.card .info {
     width: 100%;
     flex-direction: column;
     padding: 5%;
   }
 
-  .iPimage {
+.iPimage {
     width: 90%;
     margin: auto;
     padding: 5%;
     padding-right: 10%;
   }
 
-  select {
+select {
     font-size: 3.5vw;
     width: 40%;
   }
